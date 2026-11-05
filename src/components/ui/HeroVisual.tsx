@@ -30,7 +30,7 @@ export default function HeroVisual() {
           </div>
 
           <span className="text-[10px] tracking-widest text-[#8D8D8D] uppercase">
-            BCA • 2023–Present
+            BCA (2024–2027) • Bangalore
           </span>
         </div>
 

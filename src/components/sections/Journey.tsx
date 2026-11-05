@@ -14,13 +14,13 @@ interface Milestone {
 
 const milestones: Milestone[] = [
   {
-    year: "2023 — Present",
+    year: "2024 — 2027",
     title: "Bachelor of Computer Applications (BCA)",
-    role: "Computer Science Foundation",
+    role: "Krupanidhi Degree College, Bangalore",
     description:
-      "Formally studying algorithms, database management, software engineering patterns, and object-oriented paradigms. Applying concepts directly to production-grade side projects.",
+      "Pursuing a Bachelor of Computer Applications at Krupanidhi Degree College in Bangalore. Grounding practical engineering work in core computer science, data structures, algorithms, databases, and software design patterns.",
     icon: <GraduationCap className="w-4 h-4 text-[#B15F2C]" />,
-    tags: ["Data Structures", "Databases", "Software Engineering"],
+    tags: ["Krupanidhi Degree College", "Bangalore", "Data Structures", "Software Engineering"],
   },
   {
     year: "2023 — Present",

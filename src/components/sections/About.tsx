@@ -93,7 +93,7 @@ export default function About() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-base sm:text-lg text-[#555555] leading-relaxed font-light mt-2"
             >
-              My journey began with a curiosity about how software shapes daily routines. As a Computer Applications (BCA) student, I quickly immersed myself in production projects—architecting local & cloud audio engines in Flutter, high-volume event ticketing gateways, and automated Telegram bot systems.
+              My journey began with a curiosity about how software shapes daily routines. Currently pursuing my Bachelor of Computer Applications (BCA, 2024–2027) at Krupanidhi Degree College in Bangalore, I actively pair formal computer science principles with high-stakes production projects—architecting local & cloud audio engines in Flutter, high-volume event ticketing gateways, and automated Telegram bot systems.
             </motion.p>
 
             <motion.p
