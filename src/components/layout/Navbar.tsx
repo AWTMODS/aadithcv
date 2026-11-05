@@ -129,7 +129,16 @@ export default function Navbar() {
           </nav>
 
           {/* Right Status Indicator & CTA */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 sm:gap-4">
+            <a
+              href="/donate"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#111111] hover:bg-[#B15F2C] text-white text-xs font-mono uppercase tracking-wider transition-colors shadow-2xs"
+            >
+              <span className="text-sm">☕</span>
+              <span className="hidden sm:inline">Buy Me a Coffee</span>
+              <span className="sm:hidden">Donate</span>
+            </a>
+
             <div className="hidden lg:flex items-center gap-2 bg-[#F1F0EE] border border-[#E6E5E2] px-3.5 py-1.5 rounded-full">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
@@ -203,6 +212,20 @@ export default function Navbar() {
                     <ArrowUpRight className="w-5 h-5 text-[#8D8D8D]" />
                   </motion.button>
                 ))}
+
+                <motion.a
+                  href="/donate"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.35, duration: 0.3 }}
+                  className="flex items-center justify-between text-xl font-serif text-left py-3 px-4 rounded-xl bg-[#1A1A1A] text-[#B15F2C] border border-[#2A2A2A] hover:border-[#B15F2C]"
+                >
+                  <span className="flex items-center gap-2">
+                    <span>☕</span>
+                    <span>Buy Me a Coffee (UPI)</span>
+                  </span>
+                  <ArrowUpRight className="w-5 h-5 text-[#B15F2C]" />
+                </motion.a>
               </div>
             </div>
 

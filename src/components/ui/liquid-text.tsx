@@ -283,6 +283,7 @@ export default function LiquidText({
       const textTex = gl!.createTexture();
       if (!textTex) return null;
       gl!.bindTexture(gl!.TEXTURE_2D, textTex);
+      gl!.pixelStorei(gl!.UNPACK_FLIP_Y_WEBGL, true);
       gl!.texImage2D(
         gl!.TEXTURE_2D,
         0,

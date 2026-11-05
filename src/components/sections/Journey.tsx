@@ -14,7 +14,7 @@ interface Milestone {
 
 const milestones: Milestone[] = [
   {
-    year: "2022 — 2025",
+    year: "2023 — Present",
     title: "Bachelor of Computer Applications (BCA)",
     role: "Computer Science Foundation",
     description:
@@ -23,49 +23,49 @@ const milestones: Milestone[] = [
     tags: ["Data Structures", "Databases", "Software Engineering"],
   },
   {
-    year: "2023",
+    year: "2023 — Present",
     title: "Mobile Architecture with Flutter",
-    role: "Specialized Mobile Development",
+    role: "Application Development",
     description:
-      "Deep dived into the Flutter ecosystem, Dart internals, reactive state management (Provider/Riverpod), and cross-platform native channel integration.",
+      "Deep dived into the Flutter ecosystem, Dart internals, reactive state management, and modern cross-platform mobile architectures.",
     icon: <Smartphone className="w-4 h-4 text-[#B15F2C]" />,
-    tags: ["Flutter", "Dart", "Native Channels"],
+    tags: ["Flutter", "Dart", "Android", "Firebase"],
   },
   {
     year: "2023",
-    title: "Launched MUSIFY Music Player",
-    role: "Audio Engineering & Flutter App",
+    title: "Built MUSIFY Music Player",
+    role: "Flutter Mobile Application",
     description:
-      "Architected a sleek local and streaming audio application with low-latency buffering, background playback service, and custom sound equalization.",
+      "Architected a modern music player application built with Flutter, featuring audio buffering, local playback management, and custom UI design.",
     icon: <Rocket className="w-4 h-4 text-[#B15F2C]" />,
-    tags: ["AudioService", "Firebase", "Offline Caching"],
+    tags: ["Flutter", "Dart", "Firebase", "Audio"],
   },
   {
     year: "2024",
-    title: "Engineered HYREBIT Creator Platform",
-    role: "Full Stack Web Platform",
+    title: "Engineered HYREBIT Platform",
+    role: "Web Application",
     description:
-      "Engineered a digital platform for visual creatives and commercial clients featuring portfolio showcases, booking pipelines, and responsive React interfaces.",
+      "Designed and developed a digital platform connecting photographers, videographers, and commercial clients with verified showcase profiles.",
     icon: <Briefcase className="w-4 h-4 text-[#B15F2C]" />,
     tags: ["React", "Node.js", "MongoDB"],
   },
   {
-    year: "2024",
-    title: "Created ZEACH Digital Retail POS",
-    role: "Fintech & Invoicing Engine",
+    year: "2024 — Present",
+    title: "Telegram Bots & Automation Systems",
+    role: "Automation & Microservices",
     description:
-      "Built a specialized digital billing POS for boutique fashion stores with real-time inventory management, thermal receipt formatting, and Supabase data synchronization.",
+      "Engineered automated workflows, Telegram bots, file-sharing pipelines, and developer APIs handling continuous microtasks.",
     icon: <Zap className="w-4 h-4 text-[#B15F2C]" />,
-    tags: ["Next.js", "Supabase", "TypeScript"],
+    tags: ["Python", "Node.js", "Telegram API"],
   },
   {
-    year: "2025 & Beyond",
-    title: "Continuous Building & System Design",
-    role: "Independent Software Builder",
+    year: "Present",
+    title: "Independent Digital Product Builder",
+    role: "Full-Stack & Mobile Development",
     description:
-      "Pushing boundaries with Next.js 16, autonomous agents, high-concurrency Telegram microservices, and AI-driven developer utilities.",
+      "Continuously creating and refining applications, websites, and automation systems that solve real-world problems.",
     icon: <Calendar className="w-4 h-4 text-[#B15F2C]" />,
-    tags: ["Distributed Systems", "AI Tooling", "Cloud Architecture"],
+    tags: ["Next.js", "TypeScript", "Flutter", "System Design"],
   },
 ];
 

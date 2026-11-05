@@ -48,22 +48,6 @@ export const projects: Project[] = [
     role: "Full Stack Developer",
   },
   {
-    id: "zeach",
-    title: "ZEACH",
-    category: "Fintech & Retail",
-    tagline: "Omnichannel POS & Digital Invoicing Engine",
-    description:
-      "A fast, modern point-of-sale and digital billing platform designed specifically for boutique fashion retail. Streamlines inventory tracking, thermal printing, barcode scanning, and instant WhatsApp/SMS invoice delivery.",
-    tech: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "PostgreSQL"],
-    year: "2024",
-    demoUrl: null,
-    githubUrl: null,
-    color: "#1C1917",
-    accent: "#E11D48",
-    featured: true,
-    role: "Full Stack Engineer",
-  },
-  {
     id: "awtmods",
     title: "AWTMODS",
     category: "Platform & Community",

@@ -42,4 +42,11 @@ export const socialLinks: SocialLink[] = [
     handle: "contact@aadithcv.dev",
     icon: "Mail",
   },
+  {
+    platform: "Buy Me a Coffee",
+    label: "Support my work",
+    url: "https://buymeacoffee.com/aadithcvin9",
+    handle: "buymeacoffee.com/aadithcvin9",
+    icon: "Coffee",
+  },
 ];

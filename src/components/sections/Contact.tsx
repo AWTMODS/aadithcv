@@ -8,6 +8,7 @@ import {
   CheckCircle2,
   AlertCircle,
   ArrowUpRight,
+  Coffee,
 } from "lucide-react";
 import { socialLinks } from "@/data/social";
 import {
@@ -94,6 +95,8 @@ export default function Contact() {
         return <InstagramIcon className="w-4 h-4" />;
       case "Mail":
         return <Mail className="w-4 h-4" />;
+      case "Coffee":
+        return <Coffee className="w-4 h-4 text-[#B15F2C]" />;
       default:
         return <ArrowUpRight className="w-4 h-4" />;
     }
@@ -126,7 +129,7 @@ export default function Contact() {
               </p>
 
               {/* Direct email card */}
-              <div className="bg-white p-6 rounded-2xl border border-[#E6E5E2] mb-8">
+              <div className="bg-white p-6 rounded-2xl border border-[#E6E5E2] mb-4">
                 <span className="text-[11px] font-mono uppercase tracking-widest text-[#8D8D8D] block mb-1">
                   DIRECT EMAIL INBOX
                 </span>
@@ -136,6 +139,30 @@ export default function Contact() {
                 >
                   <span>contact@aadithcv.dev</span>
                   <ArrowUpRight className="w-5 h-5 text-[#B15F2C]" />
+                </a>
+              </div>
+
+              {/* Buy Me a Coffee / UPI Direct support callout */}
+              <div className="bg-[#FAF8F3] p-5 rounded-2xl border border-[#E6E5E2] mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-[#FFFFFF] border border-[#E6E5E2] flex items-center justify-center text-lg shadow-2xs shrink-0">
+                    ☕
+                  </div>
+                  <div>
+                    <h4 className="font-serif font-bold text-sm text-[#111111]">
+                      Buy Me a Coffee / UPI Donation
+                    </h4>
+                    <p className="text-xs text-[#666666]">
+                      Instant zero-fee UPI transfer or Buy Me a Coffee
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="/donate"
+                  className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-full bg-[#111111] hover:bg-[#B15F2C] text-white text-xs font-mono uppercase tracking-wider transition-colors shrink-0"
+                >
+                  <span>Support ☕</span>
+                  <ArrowUpRight className="w-3.5 h-3.5" />
                 </a>
               </div>
             </div>

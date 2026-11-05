@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ArrowUp, ArrowUpRight, Mail } from "lucide-react";
+import { ArrowUp, ArrowUpRight, Mail, Coffee } from "lucide-react";
 import { socialLinks } from "@/data/social";
 import {
   GithubIcon,
@@ -42,6 +42,8 @@ export default function Footer() {
         return <InstagramIcon className="w-4 h-4" />;
       case "Mail":
         return <Mail className="w-4 h-4" />;
+      case "Coffee":
+        return <Coffee className="w-4 h-4 text-[#FFDD00]" />;
       default:
         return <ArrowUpRight className="w-4 h-4" />;
     }
@@ -100,6 +102,15 @@ export default function Footer() {
                   </a>
                 </li>
               ))}
+              <li>
+                <a
+                  href="/donate"
+                  className="text-sm text-[#B15F2C] hover:text-[#E28743] font-medium transition-colors duration-200 inline-flex items-center gap-1.5"
+                >
+                  <span>☕</span>
+                  <span>Buy Me a Coffee (UPI)</span>
+                </a>
+              </li>
             </ul>
           </div>
 

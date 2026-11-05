@@ -116,7 +116,7 @@ export default function Projects() {
                         </span>
                       </div>
                       <span className="font-mono text-xs text-[#8D8D8D]">
-                        0{index + 1} / 06
+                        0{index + 1} / 0{projects.length}
                       </span>
                     </div>
 
