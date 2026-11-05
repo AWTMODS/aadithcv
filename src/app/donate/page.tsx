@@ -441,7 +441,7 @@ export default function DonatePage() {
                       </label>
                       <input
                         type="text"
-                        placeholder="e.g. Thanks for your work on Musify!"
+                        placeholder="e.g. Thanks for your work on Beats Music!"
                         value={note}
                         onChange={(e) => setNote(e.target.value)}
                         maxLength={50}

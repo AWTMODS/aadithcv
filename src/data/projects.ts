@@ -16,8 +16,8 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "musify",
-    title: "MUSIFY",
+    id: "beats-music",
+    title: "BEATS MUSIC",
     category: "Mobile Application",
     tagline: "High-Fidelity Audio Streaming & Local Player",
     description:
@@ -25,7 +25,7 @@ export const projects: Project[] = [
     tech: ["Flutter", "Dart", "Firebase", "AudioService", "Provider"],
     year: "2023",
     demoUrl: null,
-    githubUrl: null,
+    githubUrl: "https://github.com/AWTMODS/Beats-Music",
     color: "#18181B",
     accent: "#B15F2C",
     featured: true,

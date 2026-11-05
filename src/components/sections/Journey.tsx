@@ -33,12 +33,12 @@ const milestones: Milestone[] = [
   },
   {
     year: "2023",
-    title: "Built MUSIFY Music Player",
+    title: "Engineered Beats Music Player",
     role: "Flutter Mobile Application",
     description:
-      "Architected a modern music player application built with Flutter, featuring audio buffering, local playback management, and custom UI design.",
+      "Architected a high-fidelity local & streaming audio application built with Flutter, featuring background audio buffering, playback management, and custom sound equalization.",
     icon: <Rocket className="w-4 h-4 text-[#B15F2C]" />,
-    tags: ["Flutter", "Dart", "Firebase", "Audio"],
+    tags: ["Flutter", "Dart", "Firebase", "AudioService"],
   },
   {
     year: "2024",
