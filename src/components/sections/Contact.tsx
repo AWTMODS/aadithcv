@@ -43,6 +43,7 @@ export default function Contact() {
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const validate = (): boolean => {
     const newErrors: FormErrors = {};
@@ -67,20 +68,46 @@ export default function Contact() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
 
     setIsSubmitting(true);
+    setSubmitError(null);
 
-    // Clean logging to console as requested
-    console.log("Portfolio contact submission payload:", formData);
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "29dd5a28-fad2-42af-bfdd-63fefdf01c06",
+          name: formData.name,
+          email: formData.email,
+          subject: `[Portfolio] ${formData.subject}`,
+          message: formData.message,
+          from_name: `${formData.name} via Aadith Portfolio`,
+        }),
+      });
 
-    setTimeout(() => {
+      const data = await response.json();
+
+      if (data.success) {
+        setIsSubmitted(true);
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        throw new Error(data.message || "Failed to transmit message.");
+      }
+    } catch (err: any) {
+      console.error("Contact submission error:", err);
+      setSubmitError(
+        "Unable to send message via automated server. Please send directly to aadithaadith14@gmail.com."
+      );
+    } finally {
       setIsSubmitting(false);
-      setIsSubmitted(true);
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    }, 600);
+    }
   };
 
   const getSocialIcon = (iconName: string) => {
@@ -134,11 +161,11 @@ export default function Contact() {
                   DIRECT EMAIL INBOX
                 </span>
                 <a
-                  href="mailto:contact@aadithcv.dev"
-                  className="font-serif text-xl sm:text-2xl text-[#111111] hover:text-[#B15F2C] transition-colors inline-flex items-center gap-2"
+                  href="mailto:aadithaadith14@gmail.com"
+                  className="font-serif text-lg sm:text-xl text-[#111111] hover:text-[#B15F2C] transition-colors inline-flex items-center gap-2 break-all"
                 >
-                  <span>contact@aadithcv.dev</span>
-                  <ArrowUpRight className="w-5 h-5 text-[#B15F2C]" />
+                  <span>aadithaadith14@gmail.com</span>
+                  <ArrowUpRight className="w-5 h-5 text-[#B15F2C] shrink-0" />
                 </a>
               </div>
 
@@ -207,10 +234,10 @@ export default function Contact() {
                 >
                   <CheckCircle2 className="w-10 h-10 text-emerald-600" />
                   <h4 className="font-serif text-2xl text-[#111111]">
-                    Message received!
+                    Message Sent!
                   </h4>
                   <p className="text-sm text-[#555555] max-w-sm">
-                    Thank you for reaching out. The submission details have been logged and I will respond to your inquiry shortly.
+                    Thank you for reaching out! Your message was delivered directly to Aadith&apos;s email (<span className="font-mono text-xs text-[#111111]">aadithaadith14@gmail.com</span>). I will get back to you shortly.
                   </p>
                   <button
                     onClick={() => setIsSubmitted(false)}
@@ -325,6 +352,26 @@ export default function Contact() {
                       </span>
                     )}
                   </div>
+
+                  {/* Submission Error Banner */}
+                  {submitError && (
+                    <div className="p-4 rounded-xl bg-red-50 border border-red-200 text-xs text-red-700 flex items-start gap-2.5">
+                      <AlertCircle className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
+                      <div className="flex-1">
+                        <p>{submitError}</p>
+                        <a
+                          href={`mailto:aadithaadith14@gmail.com?subject=${encodeURIComponent(
+                            formData.subject || "Portfolio Inquiry"
+                          )}&body=${encodeURIComponent(
+                            `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`
+                          )}`}
+                          className="mt-1.5 inline-flex items-center gap-1 font-mono text-[11px] uppercase tracking-wider text-[#B15F2C] underline hover:text-[#111111]"
+                        >
+                          <span>Open in your Email App instead →</span>
+                        </a>
+                      </div>
+                    </div>
+                  )}
 
                   {/* Submit Button */}
                   <div className="pt-2">

@@ -38,8 +38,8 @@ export const socialLinks: SocialLink[] = [
   {
     platform: "Email",
     label: "Start a conversation",
-    url: "mailto:contact@aadithcv.dev",
-    handle: "contact@aadithcv.dev",
+    url: "mailto:aadithaadith14@gmail.com",
+    handle: "aadithaadith14@gmail.com",
     icon: "Mail",
   },
   {

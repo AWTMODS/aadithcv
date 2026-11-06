@@ -9,6 +9,7 @@ import WhatIBuild from "@/components/sections/WhatIBuild";
 import Projects from "@/components/sections/Projects";
 import Skills from "@/components/sections/Skills";
 import Journey from "@/components/sections/Journey";
+import Certificates from "@/components/sections/Certificates";
 import Statistics from "@/components/sections/Statistics";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/layout/Footer";
@@ -33,6 +34,7 @@ export default function Home() {
           <Projects />
           <Skills />
           <Journey />
+          <Certificates />
           <Statistics />
           <Contact />
         </main>
