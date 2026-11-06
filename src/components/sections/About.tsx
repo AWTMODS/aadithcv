@@ -55,10 +55,10 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.1 }}
-              className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#111111] leading-[1.05] tracking-tight mb-8"
+              className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl text-[#111111] leading-[1.05] tracking-tight mb-8"
             >
               A little <br />
-              <span className="italic font-light">about me.</span>
+              <span className="font-normal text-[#B15F2C]">about me.</span>
             </motion.h2>
 
             <motion.div
@@ -68,7 +68,7 @@ export default function About() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="p-6 bg-white/70 backdrop-blur-sm rounded-2xl border border-[#E6E5E2] w-full"
             >
-              <p className="font-serif italic text-lg text-[#111111] leading-relaxed mb-3">
+              <p className="font-heading italic text-lg text-[#111111] leading-relaxed mb-3">
                 &ldquo;Great software feels effortless because every edge case and interaction was obsessively considered.&rdquo;
               </p>
               <span className="text-xs font-mono uppercase tracking-widest text-[#8D8D8D]">
@@ -79,7 +79,7 @@ export default function About() {
 
           {/* Right Column: Editorial narrative with TextReveal */}
           <div className="lg:col-span-7 flex flex-col gap-6">
-            <div className="text-xl sm:text-2xl lg:text-3xl font-serif text-[#111111] leading-snug">
+            <div className="text-xl sm:text-2xl lg:text-3xl font-heading font-medium text-[#111111] leading-snug">
               <TextReveal
                 text="I am Aadith C V, an independent software developer from Kerala, India. I specialize in building tactile mobile experiences, full-stack web applications, and autonomous digital automation."
                 delay={0.1}

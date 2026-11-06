@@ -274,7 +274,7 @@ export default function LiquidText({
       ctx2d.clearRect(0, 0, W, H);
 
       const fsize = fontSize ?? Math.min(W * 0.16, H * 0.72, 110);
-      ctx2d.font = `italic 700 ${fsize}px 'DM Serif Display', Georgia, serif`;
+      ctx2d.font = `italic 700 ${fsize}px 'Clash Display', 'Satoshi', sans-serif`;
       ctx2d.fillStyle = textColor;
       ctx2d.textAlign = "center";
       ctx2d.textBaseline = "middle";
@@ -426,7 +426,7 @@ export default function LiquidText({
         style={{ height: "clamp(80px, 15vw, 150px)" }}
       >
         <span
-          className="font-serif italic font-bold tracking-tight text-center"
+          className="font-display italic font-bold tracking-tight text-center"
           style={{
             fontSize: fontSize ?? "clamp(48px, 10vw, 110px)",
             color: textColor,

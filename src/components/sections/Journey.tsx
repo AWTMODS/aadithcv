@@ -84,7 +84,7 @@ export default function Journey() {
                 05 / EVOLUTION
               </span>
             </div>
-            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#111111] tracking-tight">
+            <h2 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl text-[#111111] tracking-tight">
               My Journey.
             </h2>
           </div>
@@ -136,7 +136,7 @@ export default function Journey() {
                       <div className="w-7 h-7 rounded-lg bg-[#F1F0EE] flex items-center justify-center">
                         {item.icon}
                       </div>
-                      <h3 className="font-serif text-xl sm:text-2xl text-[#111111] group-hover:text-[#B15F2C] transition-colors">
+                      <h3 className="font-heading font-semibold text-xl sm:text-2xl text-[#111111] group-hover:text-[#B15F2C] transition-colors">
                         {item.title}
                       </h3>
                     </div>

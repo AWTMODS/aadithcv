@@ -19,7 +19,7 @@ export default function Projects() {
                 03 / SELECTED WORKS
               </span>
             </div>
-            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#111111] tracking-tight">
+            <h2 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl text-[#111111] tracking-tight">
               Things I&apos;ve built.
             </h2>
           </div>
@@ -82,7 +82,7 @@ export default function Projects() {
 
                       {/* Center Monogram / Typographic Art */}
                       <div className="relative z-10 my-auto text-center">
-                        <span className="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold tracking-wider text-white/90 drop-shadow-md">
+                        <span className="font-heading text-5xl sm:text-6xl lg:text-7xl font-bold tracking-wider text-white/90 drop-shadow-md">
                           {project.title.slice(0, 2)}
                         </span>
                         <p className="text-[11px] font-mono tracking-[0.25em] uppercase text-white/60 mt-1">
@@ -121,7 +121,7 @@ export default function Projects() {
                     </div>
 
                     {/* Title */}
-                    <h3 className="font-serif text-3xl sm:text-4xl text-[#111111] mb-2 group-hover:text-[#B15F2C] transition-colors duration-200">
+                    <h3 className="font-heading font-bold text-3xl sm:text-4xl text-[#111111] mb-2 group-hover:text-[#B15F2C] transition-colors duration-200">
                       {project.title}
                     </h3>
 

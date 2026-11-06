@@ -42,7 +42,7 @@ export default function Skills() {
                 04 / EXPERTISE
               </span>
             </div>
-            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#111111] tracking-tight">
+            <h2 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl text-[#111111] tracking-tight">
               Tools I work with.
             </h2>
           </div>
@@ -56,7 +56,7 @@ export default function Skills() {
         <div className="flex flex-wrap gap-2 sm:gap-3 mb-12">
           <button
             onClick={() => setActiveTab("all")}
-            className={`px-5 py-2 rounded-full text-xs font-mono uppercase tracking-wider transition-all duration-200 cursor-pointer ${
+            className={`px-5 py-2 rounded-full text-xs font-heading font-medium uppercase tracking-wider transition-all duration-200 cursor-pointer ${
               activeTab === "all"
                 ? "bg-[#111111] text-white shadow-sm"
                 : "bg-[#F1F0EE] hover:bg-[#E6E5E2] text-[#555555]"
@@ -68,7 +68,7 @@ export default function Skills() {
             <button
               key={cat.id}
               onClick={() => setActiveTab(cat.id)}
-              className={`inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs font-mono uppercase tracking-wider transition-all duration-200 cursor-pointer ${
+              className={`inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs font-heading font-medium uppercase tracking-wider transition-all duration-200 cursor-pointer ${
                 activeTab === cat.id
                   ? "bg-[#111111] text-white shadow-sm"
                   : "bg-[#F1F0EE] hover:bg-[#E6E5E2] text-[#555555]"
@@ -100,7 +100,7 @@ export default function Skills() {
                     <span className="w-8 h-8 rounded-lg bg-white border border-[#E6E5E2] flex items-center justify-center text-[#B15F2C]">
                       {getCategoryIcon(category.id)}
                     </span>
-                    <h3 className="font-serif text-2xl text-[#111111]">
+                    <h3 className="font-heading font-semibold text-2xl text-[#111111]">
                       {category.title}
                     </h3>
                   </div>

@@ -66,7 +66,7 @@ export default function WhatIBuild() {
                 02 / CAPABILITIES
               </span>
             </div>
-            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#111111] tracking-tight">
+            <h2 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl text-[#111111] tracking-tight">
               What I build.
             </h2>
           </div>
@@ -108,7 +108,7 @@ export default function WhatIBuild() {
                 </div>
 
                 {/* Title & Subtitle */}
-                <h3 className="font-serif text-2xl sm:text-3xl text-[#111111] mb-2 group-hover:text-[#B15F2C] transition-colors">
+                <h3 className="font-heading font-semibold text-2xl sm:text-3xl text-[#111111] mb-2 group-hover:text-[#B15F2C] transition-colors">
                   {item.title}
                 </h3>
                 <h4 className="text-xs uppercase font-mono tracking-wider text-[#8D8D8D] mb-4">

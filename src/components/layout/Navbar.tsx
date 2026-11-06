@@ -88,11 +88,11 @@ export default function Navbar() {
             href="#"
             className="group flex items-center gap-2.5 text-inherit transition-transform duration-200"
           >
-            <span className="w-8 h-8 rounded-full bg-[#111111] text-white flex items-center justify-center font-serif text-sm font-semibold tracking-wider group-hover:bg-[#B15F2C] transition-colors duration-300">
+            <span className="w-8 h-8 rounded-full bg-[#111111] text-white flex items-center justify-center font-heading text-sm font-semibold tracking-wider group-hover:bg-[#B15F2C] transition-colors duration-300">
               A
             </span>
             <div className="flex flex-col">
-              <span className="font-serif text-lg tracking-wider font-semibold text-[#111111] leading-tight">
+              <span className="font-heading text-lg tracking-wider font-semibold text-[#111111] leading-tight">
                 AADITH C V
               </span>
               <span className="text-[10px] tracking-widest text-[#8D8D8D] uppercase font-mono">

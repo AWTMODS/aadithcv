@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,600,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,300..800;1,14..32,300..800&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -10,6 +12,11 @@
   --accent-hover: #964D21;
   --text-muted: #8D8D8D;
   --border: #E6E5E2;
+
+  --font-display: 'Clash Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
 @theme inline {
@@ -21,12 +28,16 @@
   --color-accent-hover: var(--accent-hover);
   --color-muted: var(--text-muted);
   --color-border: var(--border);
-  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-serif: 'DM Serif Display', Georgia, Cambria, serif;
+
+  --font-display: var(--font-display);
+  --font-heading: var(--font-heading);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --font-serif: var(--font-heading);
 }
 
 html {
-  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--font-sans);
   background-color: #FFFFFF;
   color: #111111;
   text-rendering: optimizeLegibility;
@@ -35,6 +46,7 @@ html {
 }
 
 body {
+  font-family: var(--font-sans);
   background-color: #FFFFFF;
   color: #111111;
   overflow-x: hidden;
@@ -42,12 +54,33 @@ body {
   padding: 0;
 }
 
-.font-serif {
-  font-family: 'DM Serif Display', Georgia, Cambria, serif;
+.font-display {
+  font-family: 'Clash Display', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-heading {
+  font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .font-sans {
-  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.font-mono {
+  font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Ensure .font-serif maps to Satoshi for clean, modern headings */
+.font-serif {
+  font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Buttons and Navigation use Satoshi */
+button, 
+nav button, 
+nav a,
+.btn-font {
+  font-family: var(--font-heading);
 }
 
 ::selection {

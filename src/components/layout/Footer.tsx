@@ -54,7 +54,7 @@ export default function Footer() {
     <footer className="relative bg-[#0A0A0A] text-white overflow-hidden pt-20 pb-12 border-t border-[#1C1C1C]">
       {/* Giant Watermark Background Text */}
       <div
-        className="absolute -bottom-8 left-1/2 -translate-x-1/2 font-serif text-[18vw] font-bold text-white/[0.03] select-none pointer-events-none whitespace-nowrap tracking-tighter"
+        className="absolute -bottom-8 left-1/2 -translate-x-1/2 font-display text-[18vw] font-bold text-white/[0.03] select-none pointer-events-none whitespace-nowrap tracking-tighter"
         aria-hidden="true"
       >
         AADITH C V
@@ -66,10 +66,10 @@ export default function Footer() {
           {/* Brand info */}
           <div className="md:col-span-5 flex flex-col gap-4">
             <div className="flex items-center gap-3">
-              <span className="w-8 h-8 rounded-full bg-[#B15F2C] text-white flex items-center justify-center font-serif text-sm font-semibold">
+              <span className="w-8 h-8 rounded-full bg-[#B15F2C] text-white flex items-center justify-center font-heading text-sm font-semibold">
                 A
               </span>
-              <span className="font-serif text-2xl font-bold tracking-wide">
+              <span className="font-heading text-2xl font-bold tracking-wide">
                 AADITH C V
               </span>
             </div>

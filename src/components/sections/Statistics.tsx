@@ -86,7 +86,7 @@ export default function Statistics() {
                 06 / METRICS
               </span>
             </div>
-            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight">
+            <h2 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight">
               By the numbers.
             </h2>
           </div>
@@ -108,10 +108,10 @@ export default function Statistics() {
               className="bg-[#141414] hover:bg-[#181818] p-8 rounded-2xl border border-[#222222] hover:border-[#B15F2C]/50 transition-all duration-300 flex flex-col justify-between"
             >
               <div>
-                <div className="font-serif text-5xl sm:text-6xl lg:text-7xl font-normal text-white mb-4 text-[#B15F2C]">
+                <div className="font-display text-5xl sm:text-6xl lg:text-7xl font-semibold text-white mb-4 text-[#B15F2C]">
                   <CounterNumber target={stat.value} suffix={stat.suffix} />
                 </div>
-                <h3 className="font-serif text-xl text-white mb-2">
+                <h3 className="font-heading font-semibold text-xl text-white mb-2">
                   {stat.label}
                 </h3>
               </div>

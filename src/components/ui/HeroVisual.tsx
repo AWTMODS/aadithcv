@@ -55,14 +55,14 @@ export default function HeroVisual() {
           {/* Center Monogram / Graphic Motif */}
           <div className="relative z-10 my-auto flex flex-col items-center justify-center text-center py-2">
             <div className="relative w-20 h-20 rounded-2xl bg-gradient-to-tr from-[#B15F2C] to-[#E28743] flex items-center justify-center shadow-[0_10px_25px_rgba(177,95,44,0.4)] group-hover:scale-105 transition-transform duration-300">
-              <span className="font-serif font-black text-3xl text-white tracking-wider">
+              <span className="font-display font-bold text-3xl text-white tracking-wider">
                 ACV
               </span>
               <div className="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-[#111111] border-2 border-white/20 flex items-center justify-center text-[9px] text-[#B15F2C]">
                 ✦
               </div>
             </div>
-            <p className="font-serif italic text-lg text-white/90 mt-3 font-light">
+            <p className="font-heading text-lg text-white/90 mt-3 font-medium">
               Aadith C V
             </p>
             <p className="text-[10px] font-mono uppercase tracking-[0.2em] text-white/50 mt-0.5">

@@ -95,7 +95,7 @@ export default function Certificates() {
                 06 / CREDENTIALS
               </span>
             </div>
-            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#111111] tracking-tight">
+            <h2 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl text-[#111111] tracking-tight">
               Certificates &amp; Archives.
             </h2>
           </div>
@@ -130,7 +130,7 @@ export default function Certificates() {
               ]}
             />
             <div className="mt-8 text-center">
-              <h3 className="font-serif text-lg font-semibold text-[#111111]">
+              <h3 className="font-heading text-lg font-semibold text-[#111111]">
                 Academic &amp; CS Foundation
               </h3>
               <p className="text-xs text-[#8D8D8D] font-mono mt-1">
@@ -163,7 +163,7 @@ export default function Certificates() {
               ]}
             />
             <div className="mt-8 text-center">
-              <h3 className="font-serif text-lg font-semibold text-[#111111]">
+              <h3 className="font-heading text-lg font-semibold text-[#111111]">
                 Mobile Architecture &amp; Flutter
               </h3>
               <p className="text-xs text-[#8D8D8D] font-mono mt-1">
@@ -195,7 +195,7 @@ export default function Certificates() {
               ]}
             />
             <div className="mt-8 text-center">
-              <h3 className="font-serif text-lg font-semibold text-[#111111]">
+              <h3 className="font-heading text-lg font-semibold text-[#111111]">
                 Full-Stack &amp; Automation
               </h3>
               <p className="text-xs text-[#8D8D8D] font-mono mt-1">

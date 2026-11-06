@@ -144,9 +144,9 @@ export default function Contact() {
                   07 / COLLABORATION
                 </span>
               </div>
-              <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#111111] tracking-tight leading-[1.05] mb-6">
+              <h2 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl text-[#111111] tracking-tight leading-[1.05] mb-6">
                 Have an idea? <br />
-                <span className="italic font-light text-[#B15F2C]">
+                <span className="font-normal text-[#B15F2C]">
                   Let&apos;s build it.
                 </span>
               </h2>
@@ -162,7 +162,7 @@ export default function Contact() {
                 </span>
                 <a
                   href="mailto:aadithaadith14@gmail.com"
-                  className="font-serif text-lg sm:text-xl text-[#111111] hover:text-[#B15F2C] transition-colors inline-flex items-center gap-2 break-all"
+                  className="font-heading font-medium text-lg sm:text-xl text-[#111111] hover:text-[#B15F2C] transition-colors inline-flex items-center gap-2 break-all"
                 >
                   <span>aadithaadith14@gmail.com</span>
                   <ArrowUpRight className="w-5 h-5 text-[#B15F2C] shrink-0" />
@@ -219,7 +219,7 @@ export default function Contact() {
           {/* Right Column: Interactive Contact Form */}
           <div className="lg:col-span-7">
             <div className="bg-white p-8 sm:p-12 rounded-3xl border border-[#E6E5E2] shadow-sm">
-              <h3 className="font-serif text-2xl sm:text-3xl text-[#111111] mb-2">
+              <h3 className="font-heading font-semibold text-2xl sm:text-3xl text-[#111111] mb-2">
                 Send a Message
               </h3>
               <p className="text-xs sm:text-sm text-[#777777] mb-8 font-light">

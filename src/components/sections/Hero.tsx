@@ -48,11 +48,11 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                className="font-serif font-normal text-5xl sm:text-7xl md:text-8xl lg:text-[6.5rem] xl:text-[7.2rem] leading-[0.95] tracking-tight text-[#111111]"
+                className="font-display font-medium text-5xl sm:text-7xl md:text-8xl lg:text-[6.4rem] xl:text-[7.2rem] leading-[0.96] tracking-tight text-[#111111]"
               >
                 <span>Building ideas.</span>
                 <br />
-                <span className="italic font-light text-[#B15F2C]">
+                <span className="font-light text-[#B15F2C]">
                   Into digital reality.
                 </span>
               </motion.h1>
